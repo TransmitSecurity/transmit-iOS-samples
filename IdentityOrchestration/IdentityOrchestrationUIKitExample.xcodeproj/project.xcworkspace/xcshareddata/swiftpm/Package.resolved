@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "core-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/core-ios-sdk.git",
+      "state" : {
+        "revision" : "bfbe2bd114c7e9d2f4017a3a7ab22364f03ec812",
+        "version" : "1.0.14"
+      }
+    },
+    {
+      "identity" : "identityorchestration-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:TransmitSecurity/identityOrchestration-ios-sdk.git",
+      "state" : {
+        "revision" : "66535c739896c590e38c822b9292cfbb5867eb10",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
