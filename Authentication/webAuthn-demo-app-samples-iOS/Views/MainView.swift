@@ -39,20 +39,20 @@ struct MainView: View {
             GeometryReader { reader in
                 ScrollView {
                     VStack {
-                        HStack {
-                            Button(action: {
-                                withAnimation {
-                                    self.showPopup.toggle()
-                                }
-                            }) {
-                                Image(systemName: "line.horizontal.3")
-                                    .resizable()
-                                    .frame(width: 24, height: 12)
-                            }
-                            .frame(width: 30 , height: 30)
-                            .disabled(showPopup)
-                            Spacer()
-                        }.padding(.top, 15)
+//                        HStack {
+//                            Button(action: {
+//                                withAnimation {
+//                                    self.showPopup.toggle()
+//                                }
+//                            }) {
+//                                Image(systemName: "line.horizontal.3")
+//                                    .resizable()
+//                                    .frame(width: 24, height: 12)
+//                            }
+//                            .frame(width: 30 , height: 30)
+//                            .disabled(showPopup)
+//                            Spacer()
+//                        }.padding(.top, 15)
                         NavigationLink(destination:  viewModel.nextFlowView(), isActive: $viewModel.moveToRecommendationView) {
                         }
                         HStack {
@@ -92,9 +92,9 @@ struct MainView: View {
                     }
                     .frame(minHeight: reader.size.height)
                 }.padding([.leading, .trailing], 24)
-                    .popupNavigationView(show: $showPopup) {
-                            PopupView(showPopup: $showPopup)
-                        }
+//                    .popupNavigationView(show: $showPopup) {
+//                            PopupView(showPopup: $showPopup)
+//                        }
             }.background(Color.white)
         }
     }

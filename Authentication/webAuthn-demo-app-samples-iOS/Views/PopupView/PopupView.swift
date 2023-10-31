@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct PopupView: View {
-    @State private var baseUrl: String = AppSettings.shared.getBaseURL()
-    @State private var domain: String = AppSettings.shared.getDomain()
-    @State private var clientId: String = AppSettings.shared.getClientId()
-    @State private var clientSecret: String = AppSettings.shared.getClientSecret()
+    @State private var baseUrl: String = AppConfiguration.shared.getBaseURL()
+    @State private var domain: String = AppConfiguration.shared.getDomain()
+    @State private var clientId: String = AppConfiguration.shared.getClientId()
+    @State private var clientSecret: String = AppConfiguration.shared.getClientSecret()
     @Binding var showPopup: Bool
 
     var body: some View {
@@ -92,15 +92,10 @@ struct PopupView: View {
 
 extension PopupView {
     func setClientCredentials(baseUrl: String, domain: String, clientId: String, clientSecret: String) {
-        AppSettings.shared.baseURL = baseUrl
-        AppSettings.shared.domain = domain
-        AppSettings.shared.clientId = clientId
-        AppSettings.shared.clientSecret = clientSecret
-     //   initSDK()
-    }
-    
-    func initSDK() {
-     //   SdkController.shared.initializeWebAuthnSDK()
+        AppConfiguration.shared.baseURL = baseUrl
+        AppConfiguration.shared.domain = domain
+        AppConfiguration.shared.clientId = clientId
+        AppConfiguration.shared.clientSecret = clientSecret
     }
 }
 

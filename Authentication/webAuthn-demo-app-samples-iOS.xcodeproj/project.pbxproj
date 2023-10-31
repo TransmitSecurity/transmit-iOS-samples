@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		157597E02AEEB7550070C9DF /* InfoPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597DE2AEEB74B0070C9DF /* InfoPopupView.swift */; };
 		157597E12AEEB7570070C9DF /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597DF2AEEB74B0070C9DF /* PopupView.swift */; };
-		157597E32AEEB77F0070C9DF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597E22AEEB77F0070C9DF /* AppSettings.swift */; };
+		157597E32AEEB77F0070C9DF /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597E22AEEB77F0070C9DF /* AppConfiguration.swift */; };
 		157597E52AEEBAC00070C9DF /* SdkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597E42AEEBAC00070C9DF /* SdkController.swift */; };
 		157597EA2AEEBC570070C9DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597E72AEEBC530070C9DF /* View.swift */; };
 		157597F02AEECCF00070C9DF /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157597EE2AEECCED0070C9DF /* RootPresentationMode.swift */; };
@@ -57,7 +57,7 @@
 /* Begin PBXFileReference section */
 		157597DE2AEEB74B0070C9DF /* InfoPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopupView.swift; sourceTree = "<group>"; };
 		157597DF2AEEB74B0070C9DF /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
-		157597E22AEEB77F0070C9DF /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		157597E22AEEB77F0070C9DF /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		157597E42AEEBAC00070C9DF /* SdkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdkController.swift; sourceTree = "<group>"; };
 		157597E72AEEBC530070C9DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		157597EE2AEECCED0070C9DF /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
@@ -152,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				157597ED2AEECCED0070C9DF /* NavigationView */,
-				157597E22AEEB77F0070C9DF /* AppSettings.swift */,
 				3363C9692AADF02000EC8401 /* Constants.swift */,
 				3363C9752AAE0AB100EC8401 /* ProcessStatus.swift */,
 				3363C9842AAE0C1E00EC8401 /* DemoAppModuleInfo.swift */,
@@ -254,6 +253,7 @@
 		33D07AF32AADD36000AB01FF /* webAuthn-demo-app-samples-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				157597E22AEEB77F0070C9DF /* AppConfiguration.swift */,
 				3363C97F2AAE0BA600EC8401 /* Extensions */,
 				3363C9772AAE0B0100EC8401 /* Network */,
 				3363C9742AAE08DE00EC8401 /* webAuthn-demo-app-samples-iOS.entitlements */,
@@ -364,7 +364,7 @@
 				3363C9892AAE10D500EC8401 /* TSAuthenticationError.swift in Sources */,
 				157597F02AEECCF00070C9DF /* RootPresentationMode.swift in Sources */,
 				3363C9642AADE86E00EC8401 /* MainView.swift in Sources */,
-				157597E32AEEB77F0070C9DF /* AppSettings.swift in Sources */,
+				157597E32AEEB77F0070C9DF /* AppConfiguration.swift in Sources */,
 				157597E12AEEB7570070C9DF /* PopupView.swift in Sources */,
 				3363C9852AAE0C1E00EC8401 /* DemoAppModuleInfo.swift in Sources */,
 				33DAA6D92AAF4057003C1DBB /* TSGetReccomendationRequest.swift in Sources */,
