@@ -36,8 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func initializeWebAuthnSDK() {
-        let config = TSConfiguration(domain: AppSettings.shared.getDomain())
-        TSAuthentication.shared.initialize(baseUrl: "\(AppSettings.shared.getBaseURL())/v1", clientId: AppSettings.shared.getClientId(), configuration: config)
+        let config = TSConfiguration(domain: AppConfiguration.shared.getDomain())
+        TSAuthentication.shared.initialize(baseUrl: "\(AppConfiguration.shared.getBaseURL())/v1", clientId: AppConfiguration.shared.getClientId(), configuration: config)
         TSAccountProtection.initialize(clientId: Constants.App.clientId)
     }
 }

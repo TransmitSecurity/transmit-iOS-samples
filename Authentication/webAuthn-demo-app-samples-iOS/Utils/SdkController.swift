@@ -17,8 +17,8 @@ final class SdkController {
     }
     
     func initializeWebAuthnSDK() {
-        let config = TSConfiguration(domain: AppSettings.shared.getDomain())
-        TSAuthentication.shared.initialize(baseUrl: "\(AppSettings.shared.getBaseURL())/v1", clientId: AppSettings.shared.getClientId(), configuration: config)
+        let config = TSConfiguration(domain: AppConfiguration.shared.getDomain())
+        TSAuthentication.shared.initialize(baseUrl: "\(AppConfiguration.shared.getBaseURL())/v1", clientId: AppConfiguration.shared.getClientId(), configuration: config)
     }
     
     func initializeAccountProtectionSDK() {
