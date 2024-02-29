@@ -6,6 +6,10 @@ To explore a particular SDK and its sample applications, simply navigate to the 
 
 - [Detection And Response](https://github.com/TransmitSecurity/transmit-iOS-samples/tree/main/DetectionAndResponse)
 - [Identity Verification](https://github.com/TransmitSecurity/transmit-iOS-samples/tree/main/IdentityVerification)
+- [Authentication](https://github.com/TransmitSecurity/transmit-iOS-samples/tree/main/Authentication)
+- [Identity Orchestration](https://github.com/TransmitSecurity/transmit-iOS-samples/tree/main/IdentityOrchestration)
+
+
 
 
 ## Author
