@@ -9,21 +9,42 @@
 /* Begin PBXBuildFile section */
 		33D1657F2B94990F00461596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1657E2B94990F00461596 /* AppDelegate.swift */; };
 		33D165812B94990F00461596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165802B94990F00461596 /* SceneDelegate.swift */; };
-		33D165832B94990F00461596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165822B94990F00461596 /* ViewController.swift */; };
+		33D165832B94990F00461596 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165822B94990F00461596 /* MainViewController.swift */; };
 		33D165862B94990F00461596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D165842B94990F00461596 /* Main.storyboard */; };
 		33D165882B94991100461596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D165872B94991100461596 /* Assets.xcassets */; };
 		33D1658B2B94991100461596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D165892B94991100461596 /* LaunchScreen.storyboard */; };
+		33D165942B949BF000461596 /* TSAuthenticationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 33D165932B949BF000461596 /* TSAuthenticationSDK */; };
+		33D165972B949D7A00461596 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165962B949D7A00461596 /* Constants.swift */; };
+		33D1659F2B94A06F00461596 /* TOTPCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1659D2B94A06F00461596 /* TOTPCodeTableViewCell.swift */; };
+		33D165A02B94A06F00461596 /* TOTPCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D1659E2B94A06F00461596 /* TOTPCodeTableViewCell.xib */; };
+		33D165A22B94A32800461596 /* TOTPCodesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165A12B94A32800461596 /* TOTPCodesTableView.swift */; };
+		33D165A42B94A37E00461596 /* TOTPCodeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165A32B94A37E00461596 /* TOTPCodeCellModel.swift */; };
+		33D165A72B94AE3B00461596 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165A62B94AE3B00461596 /* UIView.swift */; };
+		33D165AA2B94B12200461596 /* AppNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165A92B94B12200461596 /* AppNavigationManager.swift */; };
+		33D165AC2B94B5EF00461596 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */; };
+		33D165AE2B94BFA500461596 /* RegisterTOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */; };
+		33D165B02B94C86F00461596 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AF2B94C86F00461596 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33D1657B2B94990F00461596 /* TOTP-demo-app-samples-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOTP-demo-app-samples-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D1657E2B94990F00461596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D165802B94990F00461596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33D165822B94990F00461596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33D165822B94990F00461596 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33D165852B94990F00461596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33D165872B94991100461596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D1658A2B94991100461596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33D1658C2B94991100461596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D165962B949D7A00461596 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33D1659D2B94A06F00461596 /* TOTPCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPCodeTableViewCell.swift; sourceTree = "<group>"; };
+		33D1659E2B94A06F00461596 /* TOTPCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOTPCodeTableViewCell.xib; sourceTree = "<group>"; };
+		33D165A12B94A32800461596 /* TOTPCodesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPCodesTableView.swift; sourceTree = "<group>"; };
+		33D165A32B94A37E00461596 /* TOTPCodeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPCodeCellModel.swift; sourceTree = "<group>"; };
+		33D165A62B94AE3B00461596 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		33D165A92B94B12200461596 /* AppNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationManager.swift; sourceTree = "<group>"; };
+		33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTOTPViewController.swift; sourceTree = "<group>"; };
+		33D165AF2B94C86F00461596 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D165942B949BF000461596 /* TSAuthenticationSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,89 @@
 		33D1657D2B94990F00461596 /* TOTP-demo-app-samples-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				33D1657E2B94990F00461596 /* AppDelegate.swift */,
-				33D165802B94990F00461596 /* SceneDelegate.swift */,
-				33D165822B94990F00461596 /* ViewController.swift */,
-				33D165842B94990F00461596 /* Main.storyboard */,
+				33D165A82B94B11200461596 /* Navigation */,
+				33D165A52B94AE2D00461596 /* Extensions */,
+				33D1659A2B949DD500461596 /* AppDelegates */,
+				33D165992B949DC800461596 /* UI */,
+				33D165982B949DB900461596 /* Controllers */,
+				33D165952B949D6100461596 /* Utils */,
 				33D165872B94991100461596 /* Assets.xcassets */,
 				33D165892B94991100461596 /* LaunchScreen.storyboard */,
 				33D1658C2B94991100461596 /* Info.plist */,
 			);
 			path = "TOTP-demo-app-samples-iOS";
+			sourceTree = "<group>";
+		};
+		33D165952B949D6100461596 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				33D165962B949D7A00461596 /* Constants.swift */,
+				33D165AF2B94C86F00461596 /* DataManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		33D165982B949DB900461596 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33D165822B94990F00461596 /* MainViewController.swift */,
+				33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */,
+				33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		33D165992B949DC800461596 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				33D1659B2B949FCD00461596 /* TableViews */,
+				33D165842B94990F00461596 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		33D1659A2B949DD500461596 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				33D165802B94990F00461596 /* SceneDelegate.swift */,
+				33D1657E2B94990F00461596 /* AppDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		33D1659B2B949FCD00461596 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				33D1659C2B94A00E00461596 /* TOTPCodes */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		33D1659C2B94A00E00461596 /* TOTPCodes */ = {
+			isa = PBXGroup;
+			children = (
+				33D1659D2B94A06F00461596 /* TOTPCodeTableViewCell.swift */,
+				33D1659E2B94A06F00461596 /* TOTPCodeTableViewCell.xib */,
+				33D165A12B94A32800461596 /* TOTPCodesTableView.swift */,
+				33D165A32B94A37E00461596 /* TOTPCodeCellModel.swift */,
+			);
+			path = TOTPCodes;
+			sourceTree = "<group>";
+		};
+		33D165A52B94AE2D00461596 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33D165A62B94AE3B00461596 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33D165A82B94B11200461596 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				33D165A92B94B12200461596 /* AppNavigationManager.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +179,9 @@
 			dependencies = (
 			);
 			name = "TOTP-demo-app-samples-iOS";
+			packageProductDependencies = (
+				33D165932B949BF000461596 /* TSAuthenticationSDK */,
+			);
 			productName = "TOTP-demo-app-samples-iOS";
 			productReference = 33D1657B2B94990F00461596 /* TOTP-demo-app-samples-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 33D165722B94990F00461596;
+			packageReferences = (
+				33D165922B949BF000461596 /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */,
+			);
 			productRefGroup = 33D1657C2B94990F00461596 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +230,7 @@
 				33D1658B2B94991100461596 /* LaunchScreen.storyboard in Resources */,
 				33D165882B94991100461596 /* Assets.xcassets in Resources */,
 				33D165862B94990F00461596 /* Main.storyboard in Resources */,
+				33D165A02B94A06F00461596 /* TOTPCodeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D165832B94990F00461596 /* ViewController.swift in Sources */,
+				33D165A72B94AE3B00461596 /* UIView.swift in Sources */,
+				33D165B02B94C86F00461596 /* DataManager.swift in Sources */,
+				33D1659F2B94A06F00461596 /* TOTPCodeTableViewCell.swift in Sources */,
+				33D165832B94990F00461596 /* MainViewController.swift in Sources */,
+				33D165AA2B94B12200461596 /* AppNavigationManager.swift in Sources */,
 				33D1657F2B94990F00461596 /* AppDelegate.swift in Sources */,
+				33D165A22B94A32800461596 /* TOTPCodesTableView.swift in Sources */,
+				33D165A42B94A37E00461596 /* TOTPCodeCellModel.swift in Sources */,
+				33D165AC2B94B5EF00461596 /* QRCodeScannerViewController.swift in Sources */,
 				33D165812B94990F00461596 /* SceneDelegate.swift in Sources */,
+				33D165AE2B94BFA500461596 /* RegisterTOTPViewController.swift in Sources */,
+				33D165972B949D7A00461596 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -363,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33D165922B949BF000461596 /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TransmitSecurity/authentication-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33D165932B949BF000461596 /* TSAuthenticationSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33D165922B949BF000461596 /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */;
+			productName = TSAuthenticationSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33D165732B94990F00461596 /* Project object */;
 }
