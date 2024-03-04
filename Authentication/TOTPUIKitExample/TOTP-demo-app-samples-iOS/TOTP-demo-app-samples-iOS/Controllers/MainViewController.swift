@@ -108,11 +108,11 @@ class MainViewController: UIViewController {
         self.present(navigationController, animated: true, completion: nil)
     }
     
+    
     @IBAction func addCodeBtnClicked(_ sender: Any) {
         presentToScanQRCodeScreen()
     }
         
-
 }
 
 
@@ -132,12 +132,15 @@ extension MainViewController: QRCodeScannerDelegate {
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return totpModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TOTPCodeTableViewCell.identifier, for: indexPath) as! TOTPCodeTableViewCell
+        // in case cell already has code
+        totpModels[indexPath.row].code = cell.code.text ?? ""
         cell.setModel(totpModels[indexPath.row])
         return cell
     }
