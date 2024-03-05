@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
 
     struct App {
-        static let clientId = "rzthg833t7rza1enxh5mefw1w5mi6yts"
+        static let clientId = "< YOUR CLIENT ID >"
     }
     
 }
