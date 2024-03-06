@@ -23,6 +23,17 @@
 		33D165AC2B94B5EF00461596 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */; };
 		33D165AE2B94BFA500461596 /* RegisterTOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */; };
 		33D165B02B94C86F00461596 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165AF2B94C86F00461596 /* DataManager.swift */; };
+		33ED26272B98B7D900F21BD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26262B98B7D900F21BD3 /* LoginViewController.swift */; };
+		33ED262B2B98C0A400F21BD3 /* RegisterTOTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED262A2B98C0A400F21BD3 /* RegisterTOTPRequest.swift */; };
+		33ED262D2B98C0F300F21BD3 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED262C2B98C0F300F21BD3 /* CreateUserRequest.swift */; };
+		33ED262F2B98C1F000F21BD3 /* GetAccessTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED262E2B98C1F000F21BD3 /* GetAccessTokenRequest.swift */; };
+		33ED26312B98C21C00F21BD3 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26302B98C21C00F21BD3 /* Dictionary.swift */; };
+		33ED26332B98C25600F21BD3 /* LoginWithPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26322B98C25600F21BD3 /* LoginWithPasswordRequest.swift */; };
+		33ED26352B98C2A400F21BD3 /* MockServerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26342B98C2A400F21BD3 /* MockServerProvider.swift */; };
+		33ED26372B98C30000F21BD3 /* DemoAppModuleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */; };
+		33ED26392B98C32800F21BD3 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26382B98C32800F21BD3 /* Bundle.swift */; };
+		33F849E32B988CA000D91894 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F849E22B988CA000D91894 /* HomePageViewController.swift */; };
+		33F849E62B9890D300D91894 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F849E52B9890D300D91894 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +54,17 @@
 		33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
 		33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTOTPViewController.swift; sourceTree = "<group>"; };
 		33D165AF2B94C86F00461596 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		33ED26262B98B7D900F21BD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33ED262A2B98C0A400F21BD3 /* RegisterTOTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTOTPRequest.swift; sourceTree = "<group>"; };
+		33ED262C2B98C0F300F21BD3 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
+		33ED262E2B98C1F000F21BD3 /* GetAccessTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccessTokenRequest.swift; sourceTree = "<group>"; };
+		33ED26302B98C21C00F21BD3 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		33ED26322B98C25600F21BD3 /* LoginWithPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithPasswordRequest.swift; sourceTree = "<group>"; };
+		33ED26342B98C2A400F21BD3 /* MockServerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServerProvider.swift; sourceTree = "<group>"; };
+		33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppModuleInfo.swift; sourceTree = "<group>"; };
+		33ED26382B98C32800F21BD3 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		33F849E22B988CA000D91894 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		33F849E52B9890D300D91894 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +98,8 @@
 		33D1657D2B94990F00461596 /* TOTP-demo-app-samples-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				33ED26282B98C06400F21BD3 /* Network */,
+				33F849E42B9890C100D91894 /* Extensions */,
 				33D165A82B94B11200461596 /* Navigation */,
 				33D1659A2B949DD500461596 /* AppDelegates */,
 				33D165992B949DC800461596 /* UI */,
@@ -93,6 +117,7 @@
 			children = (
 				33D165962B949D7A00461596 /* Constants.swift */,
 				33D165AF2B94C86F00461596 /* DataManager.swift */,
+				33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -103,6 +128,8 @@
 				33D165822B94990F00461596 /* MainViewController.swift */,
 				33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */,
 				33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */,
+				33F849E22B988CA000D91894 /* HomePageViewController.swift */,
+				33ED26262B98B7D900F21BD3 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +177,36 @@
 				33D165A92B94B12200461596 /* AppNavigationManager.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		33ED26282B98C06400F21BD3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				33ED26292B98C06E00F21BD3 /* Requests */,
+				33ED26342B98C2A400F21BD3 /* MockServerProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		33ED26292B98C06E00F21BD3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				33ED262A2B98C0A400F21BD3 /* RegisterTOTPRequest.swift */,
+				33ED262C2B98C0F300F21BD3 /* CreateUserRequest.swift */,
+				33ED262E2B98C1F000F21BD3 /* GetAccessTokenRequest.swift */,
+				33ED26322B98C25600F21BD3 /* LoginWithPasswordRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		33F849E42B9890C100D91894 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33F849E52B9890D300D91894 /* UIView.swift */,
+				33ED26302B98C21C00F21BD3 /* Dictionary.swift */,
+				33ED26382B98C32800F21BD3 /* Bundle.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,16 +287,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ED262F2B98C1F000F21BD3 /* GetAccessTokenRequest.swift in Sources */,
+				33ED26272B98B7D900F21BD3 /* LoginViewController.swift in Sources */,
+				33F849E62B9890D300D91894 /* UIView.swift in Sources */,
+				33ED26352B98C2A400F21BD3 /* MockServerProvider.swift in Sources */,
 				33D165B02B94C86F00461596 /* DataManager.swift in Sources */,
 				33D1659F2B94A06F00461596 /* TOTPCodeTableViewCell.swift in Sources */,
+				33ED26312B98C21C00F21BD3 /* Dictionary.swift in Sources */,
 				33D165832B94990F00461596 /* MainViewController.swift in Sources */,
+				33ED26372B98C30000F21BD3 /* DemoAppModuleInfo.swift in Sources */,
 				33D165AA2B94B12200461596 /* AppNavigationManager.swift in Sources */,
 				33D1657F2B94990F00461596 /* AppDelegate.swift in Sources */,
 				33D165A22B94A32800461596 /* TOTPCodesTableView.swift in Sources */,
 				33D165A42B94A37E00461596 /* TOTPCodeCellModel.swift in Sources */,
 				33D165AC2B94B5EF00461596 /* QRCodeScannerViewController.swift in Sources */,
+				33ED262B2B98C0A400F21BD3 /* RegisterTOTPRequest.swift in Sources */,
+				33ED26332B98C25600F21BD3 /* LoginWithPasswordRequest.swift in Sources */,
+				33F849E32B988CA000D91894 /* HomePageViewController.swift in Sources */,
 				33D165812B94990F00461596 /* SceneDelegate.swift in Sources */,
 				33D165AE2B94BFA500461596 /* RegisterTOTPViewController.swift in Sources */,
+				33ED26392B98C32800F21BD3 /* Bundle.swift in Sources */,
+				33ED262D2B98C0F300F21BD3 /* CreateUserRequest.swift in Sources */,
 				33D165972B949D7A00461596 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

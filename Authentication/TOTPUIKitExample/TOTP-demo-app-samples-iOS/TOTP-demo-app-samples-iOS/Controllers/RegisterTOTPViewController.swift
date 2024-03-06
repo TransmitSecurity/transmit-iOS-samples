@@ -14,29 +14,17 @@ protocol RegisterTOTPDelegate: AnyObject {
 
 class RegisterTOTPViewController: UIViewController {
     
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var switcher: UISwitch!
+    
     var URI: String = ""
     weak var delegate: RegisterTOTPDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        registerBtn.setCornerRadius(12.0)
     }
-    
-    
-    @IBAction func registerWithBiometricBtnClicked(_ sender: Any) {
-        TSAuthentication.shared.registerTOTP(URI: URI, securityType: .biometric) { [weak self] result in
-            self?.completeTOTPRegistrationProcess(with: result, securityType: .biometric)
-        }
-    }
-    
-    
-    @IBAction func registerWithoutBiometricBtnClicked(_ sender: Any) {
-        TSAuthentication.shared.registerTOTP(URI: URI, securityType: .none) { [weak self] result in
-            self?.completeTOTPRegistrationProcess(with: result, securityType: .none)
-        }
-    }
-    
+        
     
     private func completeTOTPRegistrationProcess(with result: Result<TSTOTPRegistrationResult, TSAuthenticationError>, securityType: TSTOTPSecurityType) {
         switch result {
@@ -56,6 +44,14 @@ class RegisterTOTPViewController: UIViewController {
     
     private func dismissViewController() {
         self.dismiss(animated: true)
+    }
+    
+    
+    @IBAction func registerBtnClicked(_ sender: Any) {
+        TSAuthentication.shared.registerTOTP(URI: URI, securityType: switcher.isOn ? .biometric : .none) { [weak self] result in
+            guard let self else { return }
+            self.completeTOTPRegistrationProcess(with: result, securityType: self.switcher.isOn ? .biometric : .none)
+        }
     }
     
 }
