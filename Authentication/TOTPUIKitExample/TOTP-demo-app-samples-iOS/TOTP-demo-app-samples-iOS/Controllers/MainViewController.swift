@@ -95,41 +95,57 @@ class MainViewController: UIViewController {
     }
         
     
-    private func presentToScanQRCodeScreen() {
-        let vc = AppNavigationManager.initiateViewControllerWith(identifier: .QRCodeScannerViewController,
-                                                                 storyboardName: .Main) as? QRCodeScannerViewController
-        
-        vc?.delegate = self
+//    private func presentToScanQRCodeScreen() {
+//        let vc = AppNavigationManager.initiateViewControllerWith(identifier: .QRCodeScannerViewController,
+//                                                                 storyboardName: .Main) as? QRCodeScannerViewController
+//        
+//        vc?.delegate = self
+//        
+//        guard let vc else { return }
+//        
+//        let navigationController = UINavigationController(rootViewController: vc)
+//
+//        self.present(navigationController, animated: true, completion: nil)
+//    }
+    
+    private func pushToRegisterTOTPViewController() {
+                
+        let vc = AppNavigationManager.initiateViewControllerWith(identifier: .RegisterTOTPViewController,
+                                                                 storyboardName: .Main) as? RegisterTOTPViewController
         
         guard let vc else { return }
         
+        vc.delegate = self
+        vc.URI = "otpauth://totp/ACME%20Co:jdoe@example.com?secret=AUSJD7LZ5H27TAC7NW2IJMATDMVDUPUG&issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30"
+        
         let navigationController = UINavigationController(rootViewController: vc)
-
+        
+        
         self.present(navigationController, animated: true, completion: nil)
     }
     
     
     @IBAction func addCodeBtnClicked(_ sender: Any) {
-        presentToScanQRCodeScreen()
+//        presentToScanQRCodeScreen()
+        pushToRegisterTOTPViewController()
     }
         
 }
 
-
-extension MainViewController: QRCodeScannerDelegate {
+extension MainViewController: RegisterTOTPDelegate {
     
     func didRecieveTOTPInfo(_ totpInfo: DataManager.TOTPInfo?) {
-        
         guard let totpInfo else { return }
         
         totpModels.append(TOTPCodeCellModel(issuer: totpInfo.issuer, label: totpInfo.label, uuid: totpInfo.uuid, code: "", counter: "", biometric: totpInfo.biometric))
         codesTableView.reloadData()
         
         DataManager.shared.addItem(totpInfo)
-        
     }
     
 }
+
+
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
