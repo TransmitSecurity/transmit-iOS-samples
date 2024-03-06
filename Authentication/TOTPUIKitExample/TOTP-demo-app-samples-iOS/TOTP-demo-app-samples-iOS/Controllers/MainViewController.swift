@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var addCodeBtn: UIButton!
     @IBOutlet weak var codesTableView: TOTPCodesTableView!
+    @IBOutlet weak var closeBtn: UIButton!
+    
     let cellHeight : CGFloat = 100
     
     var timer: Timer?
@@ -26,6 +28,7 @@ class MainViewController: UIViewController {
     
     private func setupUI() {
         addCodeBtn.setTitle("", for: .normal)
+        closeBtn.setTitle("", for: .normal)
         setTOTPInfoTable()
     }
     
@@ -112,7 +115,12 @@ class MainViewController: UIViewController {
     @IBAction func addCodeBtnClicked(_ sender: Any) {
         presentToScanQRCodeScreen()
     }
-        
+    
+    
+    @IBAction func closeBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
 }
 
 
