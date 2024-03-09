@@ -1,19 +1,20 @@
 //
-//  ViewController.swift
+//  SilentTOTPViewController.swift
 //  TOTP-demo-app-samples-iOS
 //
-//  Created by Tomer Picker on 03/03/2024.
+//  Created by Tomer Picker on 07/03/2024.
 //
 
 import UIKit
 import TSAuthenticationSDK
 
-class MainViewController: UIViewController {
-    
+class SilentTOTPViewController: TSXBaseViewController {
+
     @IBOutlet weak var addCodeBtn: UIButton!
     @IBOutlet weak var codesTableView: TOTPCodesTableView!
-    @IBOutlet weak var closeBtn: UIButton!
     
+    var uri: String = ""
+
     let cellHeight : CGFloat = 100
     
     var timer: Timer?
@@ -28,7 +29,6 @@ class MainViewController: UIViewController {
     
     private func setupUI() {
         addCodeBtn.setTitle("", for: .normal)
-        closeBtn.setTitle("", for: .normal)
         setTOTPInfoTable()
     }
     
@@ -89,57 +89,82 @@ class MainViewController: UIViewController {
     }
     
     private func fetchAndMapSavedTOTPToCellModel() {
-        let savedItems = DataManager.shared.fetchItems()
+        let savedItems = DataManager.shared.fetchItems(forType: .silent)
         
         self.totpModels = savedItems.map({ (element) -> TOTPCodeCellModel in
             TOTPCodeCellModel(issuer: element.issuer, label: element.label, uuid: element.uuid, code: "", counter: "", biometric: element.biometric)
         })
         
     }
-        
-    
-    private func presentToScanQRCodeScreen() {
-        let vc = AppNavigationManager.initiateViewControllerWith(identifier: .QRCodeScannerViewController,
-                                                                 storyboardName: .Main) as? QRCodeScannerViewController
-        
-        vc?.delegate = self
-        
-        guard let vc else { return }
-        
-        let navigationController = UINavigationController(rootViewController: vc)
 
-        self.present(navigationController, animated: true, completion: nil)
-    }
-    
-    
     @IBAction func addCodeBtnClicked(_ sender: Any) {
-        presentToScanQRCodeScreen()
-    }
-    
-    
-    @IBAction func closeBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true)
+        registerTOTPOnTransmitServer()
     }
     
 }
 
+private extension SilentTOTPViewController {
+    
+    private func registerTOTPOnTransmitServer() {
+        guard let loginInfo = DataManager.shared.getLoginInfo() else {
+            showToast(message: "Please log in user, or register a new one")
+            return
+        }
+        
+        let baseUrl = Constants.Network.baseUrl
+        
+        let request = TSRegisterTOTPRequest(baseURL: baseUrl,
+                                            accessToken: loginInfo.userToken,
+                                            label: loginInfo.username)
+        
+        showLoader()
+        
+        request.service.send(moduleInfo: DemoAppModuleInfo.shared) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let respone):
+                    self?.uri = respone.uri
+                    self?.presentRegisterTOTPViewController()
+                case .failure(let error):
+                    self?.showErrorToast(error: error.localizedDescription)
+                }
+                
+                self?.hideLoader()
+            }
+        }
+    }
+    
+    private func presentRegisterTOTPViewController() {
+                
+        let vc = AppNavigationManager.initiateViewControllerWith(identifier: .RegisterTOTPViewController,
+                                                                 storyboardName: .Main) as? RegisterTOTPViewController
+        vc?.delegate = self
+        vc?.URI = self.uri
+        
+        guard let vc else { return }
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.present(vc, animated: true)
+        }
+    }
 
-extension MainViewController: QRCodeScannerDelegate {
+}
+
+extension SilentTOTPViewController: RegisterTOTPDelegate {
     
     func didRecieveTOTPInfo(_ totpInfo: DataManager.TOTPInfo?) {
-        
         guard let totpInfo else { return }
         
         totpModels.append(TOTPCodeCellModel(issuer: totpInfo.issuer, label: totpInfo.label, uuid: totpInfo.uuid, code: "", counter: "", biometric: totpInfo.biometric))
         codesTableView.reloadData()
         
-        DataManager.shared.addItem(totpInfo)
-        
+        DataManager.shared.addItem(totpInfo, type: .silent)
     }
     
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+
+extension SilentTOTPViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return totpModels.count

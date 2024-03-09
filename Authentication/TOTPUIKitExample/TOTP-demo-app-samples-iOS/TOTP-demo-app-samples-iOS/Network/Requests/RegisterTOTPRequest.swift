@@ -17,8 +17,8 @@ class TSRegisterTOTPResponse: TSResponse {
 }
 
 class TSRegisterTOTPRequest: TSBaseNetworkRequest {
-    private let path = "users/me/totp"
-    
+    private let path = "cis/v1/users/me/totp"
+
     typealias HeadersKeys = Constants.Network.HeadersKeys
     
     var httpMethod: TSCoreSDK.TSHttpMethod = .POST

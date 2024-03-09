@@ -23,12 +23,13 @@ class HomePageViewController: UIViewController {
 
     @IBAction func scanQRRegistrationBtnClicked(_ sender: Any) {
         let vc = AppNavigationManager.initiateViewControllerWith(identifier: .MainViewController,
-                                                                 storyboardName: .Main) as? MainViewController
+                                                                 storyboardName: .Main) as? QRTOTPViewController
                 
         guard let vc else { return }
 
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.modalPresentationStyle = .fullScreen
+        navigationController.navigationBar.isHidden = true
 
         self.present(navigationController, animated: true, completion: nil)
     }

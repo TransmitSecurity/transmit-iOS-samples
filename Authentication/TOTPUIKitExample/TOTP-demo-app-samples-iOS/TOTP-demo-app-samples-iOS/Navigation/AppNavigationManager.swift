@@ -18,7 +18,7 @@ final class AppNavigationManager {
 }
 
 enum VCNames: String {
-    case MainViewController, QRCodeScannerViewController, RegisterTOTPViewController, HomePageViewController, LoginViewController
+    case MainViewController, QRCodeScannerViewController, RegisterTOTPViewController, HomePageViewController, LoginViewController, LoaderViewController, SilentTOTPViewController
 }
 
 enum StoryboardNames: String {
