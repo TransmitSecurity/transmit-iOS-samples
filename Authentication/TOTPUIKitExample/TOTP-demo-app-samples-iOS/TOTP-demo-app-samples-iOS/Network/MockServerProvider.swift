@@ -52,9 +52,9 @@ extension MockServerProvider {
         return accessTokenData.accessToken
     }
 
-    func createUser(baseUrl: String, accessToken: String) async throws -> TSCreateUserResponse {
+    func createUser(baseUrl: String, accessToken: String, user: TSUser) async throws -> TSCreateUserResponse {
         
-        let request = TSCreateUserRequest(baseURL: baseUrl, accessToken: accessToken)
+        let request = TSCreateUserRequest(baseURL: baseUrl, accessToken: accessToken, user: user)
         
         return try await withCheckedThrowingContinuation { continuation in
             request.service.send(moduleInfo: DemoAppModuleInfo.shared) { result in

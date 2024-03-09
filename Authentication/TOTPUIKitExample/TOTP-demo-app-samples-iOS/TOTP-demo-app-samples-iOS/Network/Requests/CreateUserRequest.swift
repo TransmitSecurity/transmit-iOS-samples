@@ -96,15 +96,24 @@ class TSCreateUserRequest: TSBaseNetworkRequest {
     
     private let accessToken: String
         
+    private let user: TSUser
+    
     var service: TSNetworkService<TSCreateUserRequest, TSCreateUserResponse> { .init(request: self) }
     
-    init(baseURL: String, accessToken: String) {
+    init(baseURL: String, accessToken: String, user: TSUser) {
         self.baseURL = baseURL
         self.accessToken = accessToken
+        self.user = user
     }
     
     func httpBody() -> Data? {
-        return nil
+        
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+    
+        let bodyData = try? encoder.encode(user)
+        
+        return bodyData
     }
     
     func urlHost() -> String? {

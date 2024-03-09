@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332B345B2B99FD4C00D2C2D3 /* SilentTOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B345A2B99FD4C00D2C2D3 /* SilentTOTPViewController.swift */; };
+		339F706E2B9CBFF60000E63C /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F706D2B9CBFF60000E63C /* LoaderViewController.swift */; };
+		339F70702B9CC1CB0000E63C /* TSLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F706F2B9CC1CB0000E63C /* TSLoadingIndicator.swift */; };
 		33D1657F2B94990F00461596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1657E2B94990F00461596 /* AppDelegate.swift */; };
 		33D165812B94990F00461596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165802B94990F00461596 /* SceneDelegate.swift */; };
-		33D165832B94990F00461596 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165822B94990F00461596 /* MainViewController.swift */; };
+		33D165832B94990F00461596 /* QRTOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D165822B94990F00461596 /* QRTOTPViewController.swift */; };
 		33D165862B94990F00461596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D165842B94990F00461596 /* Main.storyboard */; };
 		33D165882B94991100461596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D165872B94991100461596 /* Assets.xcassets */; };
 		33D1658B2B94991100461596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D165892B94991100461596 /* LaunchScreen.storyboard */; };
@@ -32,15 +35,20 @@
 		33ED26352B98C2A400F21BD3 /* MockServerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26342B98C2A400F21BD3 /* MockServerProvider.swift */; };
 		33ED26372B98C30000F21BD3 /* DemoAppModuleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */; };
 		33ED26392B98C32800F21BD3 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED26382B98C32800F21BD3 /* Bundle.swift */; };
+		33ED263B2B98C73100F21BD3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED263A2B98C73100F21BD3 /* BaseViewController.swift */; };
+		33ED26402B99DE5400F21BD3 /* TSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED263F2B99DE5400F21BD3 /* TSUser.swift */; };
 		33F849E32B988CA000D91894 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F849E22B988CA000D91894 /* HomePageViewController.swift */; };
 		33F849E62B9890D300D91894 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F849E52B9890D300D91894 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		332B345A2B99FD4C00D2C2D3 /* SilentTOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTOTPViewController.swift; sourceTree = "<group>"; };
+		339F706D2B9CBFF60000E63C /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		339F706F2B9CC1CB0000E63C /* TSLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoadingIndicator.swift; sourceTree = "<group>"; };
 		33D1657B2B94990F00461596 /* TOTP-demo-app-samples-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOTP-demo-app-samples-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D1657E2B94990F00461596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D165802B94990F00461596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33D165822B94990F00461596 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		33D165822B94990F00461596 /* QRTOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTOTPViewController.swift; sourceTree = "<group>"; };
 		33D165852B94990F00461596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33D165872B94991100461596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33D1658A2B94991100461596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 		33ED26342B98C2A400F21BD3 /* MockServerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServerProvider.swift; sourceTree = "<group>"; };
 		33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppModuleInfo.swift; sourceTree = "<group>"; };
 		33ED26382B98C32800F21BD3 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		33ED263A2B98C73100F21BD3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		33ED263F2B99DE5400F21BD3 /* TSUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSUser.swift; sourceTree = "<group>"; };
 		33F849E22B988CA000D91894 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		33F849E52B9890D300D91894 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +128,8 @@
 				33D165962B949D7A00461596 /* Constants.swift */,
 				33D165AF2B94C86F00461596 /* DataManager.swift */,
 				33ED26362B98C30000F21BD3 /* DemoAppModuleInfo.swift */,
+				33ED263F2B99DE5400F21BD3 /* TSUser.swift */,
+				339F706F2B9CC1CB0000E63C /* TSLoadingIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -125,11 +137,14 @@
 		33D165982B949DB900461596 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				33D165822B94990F00461596 /* MainViewController.swift */,
+				33D165822B94990F00461596 /* QRTOTPViewController.swift */,
 				33D165AB2B94B5EF00461596 /* QRCodeScannerViewController.swift */,
 				33D165AD2B94BFA500461596 /* RegisterTOTPViewController.swift */,
 				33F849E22B988CA000D91894 /* HomePageViewController.swift */,
 				33ED26262B98B7D900F21BD3 /* LoginViewController.swift */,
+				33ED263A2B98C73100F21BD3 /* BaseViewController.swift */,
+				332B345A2B99FD4C00D2C2D3 /* SilentTOTPViewController.swift */,
+				339F706D2B9CBFF60000E63C /* LoaderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -288,14 +303,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				33ED262F2B98C1F000F21BD3 /* GetAccessTokenRequest.swift in Sources */,
+				339F70702B9CC1CB0000E63C /* TSLoadingIndicator.swift in Sources */,
 				33ED26272B98B7D900F21BD3 /* LoginViewController.swift in Sources */,
 				33F849E62B9890D300D91894 /* UIView.swift in Sources */,
+				33ED263B2B98C73100F21BD3 /* BaseViewController.swift in Sources */,
 				33ED26352B98C2A400F21BD3 /* MockServerProvider.swift in Sources */,
 				33D165B02B94C86F00461596 /* DataManager.swift in Sources */,
 				33D1659F2B94A06F00461596 /* TOTPCodeTableViewCell.swift in Sources */,
 				33ED26312B98C21C00F21BD3 /* Dictionary.swift in Sources */,
-				33D165832B94990F00461596 /* MainViewController.swift in Sources */,
+				33D165832B94990F00461596 /* QRTOTPViewController.swift in Sources */,
 				33ED26372B98C30000F21BD3 /* DemoAppModuleInfo.swift in Sources */,
+				332B345B2B99FD4C00D2C2D3 /* SilentTOTPViewController.swift in Sources */,
 				33D165AA2B94B12200461596 /* AppNavigationManager.swift in Sources */,
 				33D1657F2B94990F00461596 /* AppDelegate.swift in Sources */,
 				33D165A22B94A32800461596 /* TOTPCodesTableView.swift in Sources */,
@@ -305,6 +323,8 @@
 				33ED26332B98C25600F21BD3 /* LoginWithPasswordRequest.swift in Sources */,
 				33F849E32B988CA000D91894 /* HomePageViewController.swift in Sources */,
 				33D165812B94990F00461596 /* SceneDelegate.swift in Sources */,
+				33ED26402B99DE5400F21BD3 /* TSUser.swift in Sources */,
+				339F706E2B9CBFF60000E63C /* LoaderViewController.swift in Sources */,
 				33D165AE2B94BFA500461596 /* RegisterTOTPViewController.swift in Sources */,
 				33ED26392B98C32800F21BD3 /* Bundle.swift in Sources */,
 				33ED262D2B98C0F300F21BD3 /* CreateUserRequest.swift in Sources */,

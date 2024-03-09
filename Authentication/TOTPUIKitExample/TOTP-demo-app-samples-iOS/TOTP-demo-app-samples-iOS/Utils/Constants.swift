@@ -10,9 +10,9 @@ import Foundation
 struct Constants {
 
     struct App {
-        static let clientId = "rzthg833t7rza1enxh5mefw1w5mi6yts"
+        static let clientId = "xmTmsFeSY9Q8KrmK9B_Pn"
+        static let clientSecret =
     }
-    
 }
 
 extension Constants {
@@ -20,6 +20,9 @@ extension Constants {
 }
 
 extension Constants.Network {
+    
+    static let baseUrl = "https://api.transmitsecurity.io"
+
     struct ParamsKeys {
         static let clientId = "client_id"
         static let clientSecret =
