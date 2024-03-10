@@ -155,7 +155,9 @@ extension SilentTOTPViewController: RegisterTOTPDelegate {
     func didRecieveTOTPInfo(_ totpInfo: DataManager.TOTPInfo?) {
         guard let totpInfo else { return }
         
-        totpModels.append(TOTPCodeCellModel(issuer: totpInfo.issuer, label: totpInfo.label, uuid: totpInfo.uuid, code: "", counter: "", biometric: totpInfo.biometric))
+        // override current item if exist
+        totpModels = [TOTPCodeCellModel(issuer: totpInfo.issuer, label: totpInfo.label, uuid: totpInfo.uuid, code: "", counter: "", biometric: totpInfo.biometric)]
+   
         codesTableView.reloadData()
         
         DataManager.shared.addItem(totpInfo, type: .silent)
@@ -173,7 +175,7 @@ extension SilentTOTPViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TOTPCodeTableViewCell.identifier, for: indexPath) as! TOTPCodeTableViewCell
         // in case cell already has code
-        totpModels[indexPath.row].code = cell.code.text ?? ""
+        cell.code.text = totpModels[indexPath.row].code
         cell.setModel(totpModels[indexPath.row])
         return cell
     }
