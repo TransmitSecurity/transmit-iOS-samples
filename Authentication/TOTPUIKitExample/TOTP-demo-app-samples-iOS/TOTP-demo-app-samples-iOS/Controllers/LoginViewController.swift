@@ -42,7 +42,6 @@ class LoginViewController: TSXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setDefaultUserDetails()
         setInitialUserState()
     }
     
@@ -122,13 +121,6 @@ class LoginViewController: TSXBaseViewController {
 
 private extension LoginViewController {
     
-    private func setDefaultUserDetails() {
-        let email = "igor.babitski+14@transmitsecurity.com"
-        let password = "Ib123456!"
-        
-        emailTextField.text = email
-        passwordTextField.text = password
-    }
     
     private func setInitialUserState() {
         currentAuthState = DataManager.shared.isUserLoggedIn() ? .loggedIn : .loggedOut
