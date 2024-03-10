@@ -67,7 +67,7 @@ class DataManager {
         case .qr:
             totpQRInfoItems.append(item)
         case .silent:
-            totpSilentInfoItems.append(item)
+            totpSilentInfoItems = [item]
         }
         saveItems(forType: type)
     }
