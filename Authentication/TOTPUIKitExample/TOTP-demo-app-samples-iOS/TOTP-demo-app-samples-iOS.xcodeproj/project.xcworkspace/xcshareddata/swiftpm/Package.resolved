@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "authentication-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/authentication-ios-sdk",
+      "state" : {
+        "revision" : "1b1275e63d3f3d4b26ffdc4e5e7bb40765dcc943",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "core-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/core-ios-sdk.git",
+      "state" : {
+        "revision" : "47051661c38aa9840a1ac018e8aecbfc08d08a59",
+        "version" : "1.0.19"
+      }
+    }
+  ],
+  "version" : 2
+}
