@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "accountprotection-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/accountprotection-ios-sdk.git",
+      "state" : {
+        "revision" : "f748e1d9c254959b010b9eb28956987b40d09580",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "core-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/core-ios-sdk.git",
+      "state" : {
+        "revision" : "6ee0facde7f1054f9912ae5fb431eb01d4bd7aaf",
+        "version" : "1.0.21"
+      }
+    },
+    {
+      "identity" : "identityorchestration-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/identityOrchestration-ios-sdk.git",
+      "state" : {
+        "revision" : "055f21b84e0a3bca5e97073a44ecf67f35e9d8b8",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}

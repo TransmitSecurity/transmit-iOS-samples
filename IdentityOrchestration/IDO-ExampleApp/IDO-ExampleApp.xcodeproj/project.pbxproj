@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11BE616EFAA64771A9B04240 /* FormEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50A2A077164444BEFF9A17 /* FormEmailViewController.swift */; };
+		13F6958033334F5A8C8F67CA /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6DDBF20A824FB5B74C205E /* ErrorViewController.xib */; };
+		153135BA2B7E17B700427759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135B92B7E17B700427759 /* AppDelegate.swift */; };
+		153135BC2B7E17B700427759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135BB2B7E17B700427759 /* SceneDelegate.swift */; };
+		153135BE2B7E17B700427759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135BD2B7E17B700427759 /* ViewController.swift */; };
+		153135C12B7E17B700427759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153135BF2B7E17B700427759 /* Main.storyboard */; };
+		153135C32B7E17B800427759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153135C22B7E17B800427759 /* Assets.xcassets */; };
+		153135C62B7E17B800427759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153135C42B7E17B800427759 /* LaunchScreen.storyboard */; };
+		153135D72B7E213600427759 /* IdentityOrchestration in Frameworks */ = {isa = PBXBuildFile; productRef = 153135D62B7E213600427759 /* IdentityOrchestration */; };
+		153135DD2B7E46AF00427759 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135DC2B7E46AF00427759 /* Settings.swift */; };
+		153135DF2B8219CD00427759 /* TSLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135DE2B8219CD00427759 /* TSLoadingIndicator.swift */; };
+		153135E22B821A6C00427759 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135E12B821A6C00427759 /* BaseViewController.swift */; };
+		153135E72B82206100427759 /* IdoJourneyErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135E62B82206100427759 /* IdoJourneyErrorExtension.swift */; };
+		153135F62B822C9700427759 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135F52B822C9700427759 /* Storyboardable.swift */; };
+		153136002B83489D00427759 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135FF2B83489D00427759 /* NibLoadable.swift */; };
+		155110E02BB02BEE00D2E1A2 /* DRSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155110DF2BB02BB200D2E1A2 /* DRSViewController.swift */; };
+		155110E32BB03DDE00D2E1A2 /* AccountProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 155110E22BB03DDE00D2E1A2 /* AccountProtection */; };
+		155110EE2BB2F7CE00D2E1A2 /* DRSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */; };
+		155110EF2BB2F7FD00D2E1A2 /* TransmitSecurity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1507D4CF2BAC348A0085F9A5 /* TransmitSecurity.plist */; };
+		15FB974A2B95E2EA00872BE3 /* ActionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB97492B95E2EA00872BE3 /* ActionHandlerProtocol.swift */; };
+		1882684748ED416FA4290DA6 /* RejectAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9B553FBB74C47A5B855A9 /* RejectAccessViewController.xib */; };
+		23606309EF4744A3A5AF5D65 /* DisplayInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07653C395D1640F2AF37ACC8 /* DisplayInformationViewController.xib */; };
+		2E4AB0CAAAC04E61814860F8 /* CompleteJourneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9E3DF33DC64AA18C5CFC71 /* CompleteJourneyViewController.xib */; };
+		3FC07372598542C9A1150B2A /* DisplayInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBCC24AA0D4EEB9D918AE5 /* DisplayInformationViewController.swift */; };
+		46D12EDA52EA4623ACE94CB5 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89073A6EC395489898A83782 /* ErrorViewController.swift */; };
+		5E4DC09539514696B645FE45 /* FormPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18078585B7A24104B64EE6BF /* FormPhoneViewController.swift */; };
+		6131D815FCDC4090AE27A285 /* RejectAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9D97AA70643209E2E18E0 /* RejectAccessViewController.swift */; };
+		793DF1E4E0824EB6B0AFCC46 /* FormPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E152883E1A46CC8A054FE2 /* FormPhoneViewController.xib */; };
+		BBF66AD12BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF66AD02BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift */; };
+		E8DE6D8E74684CEEA4915713 /* CompleteJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85CD135BA734CDDAEAC7714 /* CompleteJourneyViewController.swift */; };
+		F0A73498B5544379B83C9825 /* FormEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DAC92FF86F4FC6A87B20DA /* FormEmailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01FBCC24AA0D4EEB9D918AE5 /* DisplayInformationViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = DisplayInformationViewController.swift; sourceTree = "<group>"; };
+		07653C395D1640F2AF37ACC8 /* DisplayInformationViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = DisplayInformationViewController.xib; sourceTree = "<group>"; };
+		0EA9D97AA70643209E2E18E0 /* RejectAccessViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = RejectAccessViewController.swift; sourceTree = "<group>"; };
+		0FA9B553FBB74C47A5B855A9 /* RejectAccessViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = RejectAccessViewController.xib; sourceTree = "<group>"; };
+		1507D4CF2BAC348A0085F9A5 /* TransmitSecurity.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TransmitSecurity.plist; sourceTree = "<group>"; };
+		153135B62B7E17B700427759 /* IDO-ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IDO-ExampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		153135B92B7E17B700427759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		153135BB2B7E17B700427759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		153135BD2B7E17B700427759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		153135C02B7E17B700427759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		153135C22B7E17B800427759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		153135C52B7E17B800427759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		153135C72B7E17B800427759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153135DC2B7E46AF00427759 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		153135DE2B8219CD00427759 /* TSLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoadingIndicator.swift; sourceTree = "<group>"; };
+		153135E12B821A6C00427759 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		153135E62B82206100427759 /* IdoJourneyErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdoJourneyErrorExtension.swift; sourceTree = "<group>"; };
+		153135F52B822C9700427759 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		153135FF2B83489D00427759 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DRSViewController.xib; sourceTree = "<group>"; };
+		155110DF2BB02BB200D2E1A2 /* DRSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRSViewController.swift; sourceTree = "<group>"; };
+		15FB97492B95E2EA00872BE3 /* ActionHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHandlerProtocol.swift; sourceTree = "<group>"; };
+		18078585B7A24104B64EE6BF /* FormPhoneViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = FormPhoneViewController.swift; sourceTree = "<group>"; };
+		58DAC92FF86F4FC6A87B20DA /* FormEmailViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = FormEmailViewController.xib; sourceTree = "<group>"; };
+		61E152883E1A46CC8A054FE2 /* FormPhoneViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = FormPhoneViewController.xib; sourceTree = "<group>"; };
+		6E50A2A077164444BEFF9A17 /* FormEmailViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = FormEmailViewController.swift; sourceTree = "<group>"; };
+		7D9E3DF33DC64AA18C5CFC71 /* CompleteJourneyViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = CompleteJourneyViewController.xib; sourceTree = "<group>"; };
+		89073A6EC395489898A83782 /* ErrorViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		AD6DDBF20A824FB5B74C205E /* ErrorViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		BBF66AD02BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdoJourneyActionTypeExtension.swift; sourceTree = "<group>"; };
+		D85CD135BA734CDDAEAC7714 /* CompleteJourneyViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = CompleteJourneyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153135B32B7E17B700427759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153135D72B7E213600427759 /* IdentityOrchestration in Frameworks */,
+				155110E32BB03DDE00D2E1A2 /* AccountProtection in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153135AD2B7E17B700427759 = {
+			isa = PBXGroup;
+			children = (
+				153135B82B7E17B700427759 /* IDO-ExampleApp */,
+				153135B72B7E17B700427759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		153135B72B7E17B700427759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153135B62B7E17B700427759 /* IDO-ExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153135B82B7E17B700427759 /* IDO-ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				1507D4CF2BAC348A0085F9A5 /* TransmitSecurity.plist */,
+				153135DC2B7E46AF00427759 /* Settings.swift */,
+				153135E02B8219D000427759 /* Utils */,
+				153135D82B7E463400427759 /* ViewControllers */,
+				153135B92B7E17B700427759 /* AppDelegate.swift */,
+				153135BB2B7E17B700427759 /* SceneDelegate.swift */,
+				153135BF2B7E17B700427759 /* Main.storyboard */,
+				153135C22B7E17B800427759 /* Assets.xcassets */,
+				153135C42B7E17B800427759 /* LaunchScreen.storyboard */,
+				153135C72B7E17B800427759 /* Info.plist */,
+			);
+			path = "IDO-ExampleApp";
+			sourceTree = "<group>";
+		};
+		153135D82B7E463400427759 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				153135F02B82279500427759 /* Main */,
+				7F592C19ABB042009F334D47 /* ErrorViewController */,
+				A1740AFD6ED84AD59392F6B9 /* RejectAccessViewController */,
+				3BC52B3ECA084B8B9FA000A9 /* FormEmailViewController */,
+				CD24013B096547E1AAEF760F /* FormPhoneViewController */,
+				5925B66E204A42599CD52AEC /* DisplayInformationViewController */,
+				34DAD9D8D72A47ACA4FE83E7 /* CompleteJourneyViewController */,
+				155110DD2BB02B8900D2E1A2 /* DRSViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		153135E02B8219D000427759 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				153135DE2B8219CD00427759 /* TSLoadingIndicator.swift */,
+				153135FF2B83489D00427759 /* NibLoadable.swift */,
+				153135F52B822C9700427759 /* Storyboardable.swift */,
+				153135EC2B82265700427759 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		153135EC2B82265700427759 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				153135E62B82206100427759 /* IdoJourneyErrorExtension.swift */,
+				BBF66AD02BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		153135F02B82279500427759 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				153135BD2B7E17B700427759 /* ViewController.swift */,
+				153135E12B821A6C00427759 /* BaseViewController.swift */,
+				15FB97492B95E2EA00872BE3 /* ActionHandlerProtocol.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		155110DD2BB02B8900D2E1A2 /* DRSViewController */ = {
+			isa = PBXGroup;
+			children = (
+				155110DF2BB02BB200D2E1A2 /* DRSViewController.swift */,
+				155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */,
+			);
+			path = DRSViewController;
+			sourceTree = "<group>";
+		};
+		34DAD9D8D72A47ACA4FE83E7 /* CompleteJourneyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D85CD135BA734CDDAEAC7714 /* CompleteJourneyViewController.swift */,
+				7D9E3DF33DC64AA18C5CFC71 /* CompleteJourneyViewController.xib */,
+			);
+			path = CompleteJourneyViewController;
+			sourceTree = "<group>";
+		};
+		3BC52B3ECA084B8B9FA000A9 /* FormEmailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6E50A2A077164444BEFF9A17 /* FormEmailViewController.swift */,
+				58DAC92FF86F4FC6A87B20DA /* FormEmailViewController.xib */,
+			);
+			path = FormEmailViewController;
+			sourceTree = "<group>";
+		};
+		5925B66E204A42599CD52AEC /* DisplayInformationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01FBCC24AA0D4EEB9D918AE5 /* DisplayInformationViewController.swift */,
+				07653C395D1640F2AF37ACC8 /* DisplayInformationViewController.xib */,
+			);
+			path = DisplayInformationViewController;
+			sourceTree = "<group>";
+		};
+		7F592C19ABB042009F334D47 /* ErrorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89073A6EC395489898A83782 /* ErrorViewController.swift */,
+				AD6DDBF20A824FB5B74C205E /* ErrorViewController.xib */,
+			);
+			path = ErrorViewController;
+			sourceTree = "<group>";
+		};
+		A1740AFD6ED84AD59392F6B9 /* RejectAccessViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9D97AA70643209E2E18E0 /* RejectAccessViewController.swift */,
+				0FA9B553FBB74C47A5B855A9 /* RejectAccessViewController.xib */,
+			);
+			path = RejectAccessViewController;
+			sourceTree = "<group>";
+		};
+		CD24013B096547E1AAEF760F /* FormPhoneViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18078585B7A24104B64EE6BF /* FormPhoneViewController.swift */,
+				61E152883E1A46CC8A054FE2 /* FormPhoneViewController.xib */,
+			);
+			path = FormPhoneViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		153135B52B7E17B700427759 /* IDO-ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153135CA2B7E17B800427759 /* Build configuration list for PBXNativeTarget "IDO-ExampleApp" */;
+			buildPhases = (
+				153135B22B7E17B700427759 /* Sources */,
+				153135B32B7E17B700427759 /* Frameworks */,
+				153135B42B7E17B700427759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IDO-ExampleApp";
+			packageProductDependencies = (
+				153135D62B7E213600427759 /* IdentityOrchestration */,
+				155110E22BB03DDE00D2E1A2 /* AccountProtection */,
+			);
+			productName = "IDO-ExampleApp";
+			productReference = 153135B62B7E17B700427759 /* IDO-ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153135AE2B7E17B700427759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					153135B52B7E17B700427759 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 153135B12B7E17B700427759 /* Build configuration list for PBXProject "IDO-ExampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153135AD2B7E17B700427759;
+			packageReferences = (
+				153135D52B7E213600427759 /* XCRemoteSwiftPackageReference "identityOrchestration-ios-sdk" */,
+				155110E12BB03DDE00D2E1A2 /* XCRemoteSwiftPackageReference "accountprotection-ios-sdk" */,
+			);
+			productRefGroup = 153135B72B7E17B700427759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153135B52B7E17B700427759 /* IDO-ExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153135B42B7E17B700427759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153135C62B7E17B800427759 /* LaunchScreen.storyboard in Resources */,
+				155110EF2BB2F7FD00D2E1A2 /* TransmitSecurity.plist in Resources */,
+				153135C32B7E17B800427759 /* Assets.xcassets in Resources */,
+				155110EE2BB2F7CE00D2E1A2 /* DRSViewController.xib in Resources */,
+				153135C12B7E17B700427759 /* Main.storyboard in Resources */,
+				13F6958033334F5A8C8F67CA /* ErrorViewController.xib in Resources */,
+				1882684748ED416FA4290DA6 /* RejectAccessViewController.xib in Resources */,
+				F0A73498B5544379B83C9825 /* FormEmailViewController.xib in Resources */,
+				793DF1E4E0824EB6B0AFCC46 /* FormPhoneViewController.xib in Resources */,
+				23606309EF4744A3A5AF5D65 /* DisplayInformationViewController.xib in Resources */,
+				2E4AB0CAAAC04E61814860F8 /* CompleteJourneyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153135B22B7E17B700427759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153135BE2B7E17B700427759 /* ViewController.swift in Sources */,
+				BBF66AD12BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift in Sources */,
+				153135DF2B8219CD00427759 /* TSLoadingIndicator.swift in Sources */,
+				153135E22B821A6C00427759 /* BaseViewController.swift in Sources */,
+				153136002B83489D00427759 /* NibLoadable.swift in Sources */,
+				153135F62B822C9700427759 /* Storyboardable.swift in Sources */,
+				153135E72B82206100427759 /* IdoJourneyErrorExtension.swift in Sources */,
+				153135BA2B7E17B700427759 /* AppDelegate.swift in Sources */,
+				155110E02BB02BEE00D2E1A2 /* DRSViewController.swift in Sources */,
+				15FB974A2B95E2EA00872BE3 /* ActionHandlerProtocol.swift in Sources */,
+				153135BC2B7E17B700427759 /* SceneDelegate.swift in Sources */,
+				153135DD2B7E46AF00427759 /* Settings.swift in Sources */,
+				46D12EDA52EA4623ACE94CB5 /* ErrorViewController.swift in Sources */,
+				6131D815FCDC4090AE27A285 /* RejectAccessViewController.swift in Sources */,
+				11BE616EFAA64771A9B04240 /* FormEmailViewController.swift in Sources */,
+				5E4DC09539514696B645FE45 /* FormPhoneViewController.swift in Sources */,
+				3FC07372598542C9A1150B2A /* DisplayInformationViewController.swift in Sources */,
+				E8DE6D8E74684CEEA4915713 /* CompleteJourneyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		153135BF2B7E17B700427759 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153135C02B7E17B700427759 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		153135C42B7E17B800427759 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153135C52B7E17B800427759 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		153135C82B7E17B800427759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		153135C92B7E17B800427759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		153135CB2B7E17B800427759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3RV2Q6B99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IDO-ExampleApp/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"IDO-ExampleApp\" requires access to your camera to allow you to capture and upload photos directly within the app";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"IDO-ExampleApp\" requires your permission to use Face ID for a seamless and secure authentication experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TransmitSecurity.IDO-ExampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		153135CC2B7E17B800427759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3RV2Q6B99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IDO-ExampleApp/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"IDO-ExampleApp\" requires access to your camera to allow you to capture and upload photos directly within the app";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"IDO-ExampleApp\" requires your permission to use Face ID for a seamless and secure authentication experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TransmitSecurity.IDO-ExampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153135B12B7E17B700427759 /* Build configuration list for PBXProject "IDO-ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153135C82B7E17B800427759 /* Debug */,
+				153135C92B7E17B800427759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153135CA2B7E17B800427759 /* Build configuration list for PBXNativeTarget "IDO-ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153135CB2B7E17B800427759 /* Debug */,
+				153135CC2B7E17B800427759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		153135D52B7E213600427759 /* XCRemoteSwiftPackageReference "identityOrchestration-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TransmitSecurity/identityOrchestration-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		155110E12BB03DDE00D2E1A2 /* XCRemoteSwiftPackageReference "accountprotection-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TransmitSecurity/accountprotection-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153135D62B7E213600427759 /* IdentityOrchestration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153135D52B7E213600427759 /* XCRemoteSwiftPackageReference "identityOrchestration-ios-sdk" */;
+			productName = IdentityOrchestration;
+		};
+		155110E22BB03DDE00D2E1A2 /* AccountProtection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 155110E12BB03DDE00D2E1A2 /* XCRemoteSwiftPackageReference "accountprotection-ios-sdk" */;
+			productName = AccountProtection;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 153135AE2B7E17B700427759 /* Project object */;
+}
