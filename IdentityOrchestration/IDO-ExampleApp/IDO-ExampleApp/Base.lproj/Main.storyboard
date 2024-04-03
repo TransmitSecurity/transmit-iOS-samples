@@ -42,10 +42,9 @@
         <!--Navigation Controller-->
         <scene sceneID="MB5-2D-en6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wTL-gR-3I0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="wTL-gR-3I0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MCN-68-dIr">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
