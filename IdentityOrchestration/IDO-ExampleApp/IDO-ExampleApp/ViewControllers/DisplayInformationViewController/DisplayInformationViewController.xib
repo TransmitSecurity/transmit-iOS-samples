@@ -22,16 +22,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IwH-Bb-uWO">
-                    <rect key="frame" x="144.66666666666666" y="79" width="103.66666666666666" height="70.333333333333314"/>
+                    <rect key="frame" x="20" y="79" width="353" height="70.333333333333314"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJn-Mc-dlz">
-                            <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-O5-rjT">
-                            <rect key="frame" x="0.0" y="50" width="103.66666666666667" height="20.333333333333329"/>
+                            <rect key="frame" x="0.0" y="50" width="353" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -60,8 +60,10 @@
             <constraints>
                 <constraint firstItem="IwH-Bb-uWO" firstAttribute="centerX" secondItem="DkG-Nm-0Uq" secondAttribute="centerX" id="4zU-ra-wQo"/>
                 <constraint firstItem="j20-2A-x5X" firstAttribute="centerX" secondItem="DkG-Nm-0Uq" secondAttribute="centerX" id="5gk-HX-bc6"/>
+                <constraint firstItem="IwH-Bb-uWO" firstAttribute="leading" secondItem="uzE-Ia-uQg" secondAttribute="leading" constant="20" id="Ow9-Y7-Nmq"/>
                 <constraint firstItem="uzE-Ia-uQg" firstAttribute="bottom" secondItem="j20-2A-x5X" secondAttribute="bottom" constant="20" id="g6o-5X-0io"/>
                 <constraint firstItem="IwH-Bb-uWO" firstAttribute="top" secondItem="uzE-Ia-uQg" secondAttribute="top" constant="20" id="jVM-kZ-4Ye"/>
+                <constraint firstItem="uzE-Ia-uQg" firstAttribute="trailing" secondItem="IwH-Bb-uWO" secondAttribute="trailing" constant="20" id="sya-gg-xdc"/>
             </constraints>
             <point key="canvasLocation" x="1308" y="-654"/>
         </view>
