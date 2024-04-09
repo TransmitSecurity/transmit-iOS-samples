@@ -5,8 +5,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TransmitSecurity/accountprotection-ios-sdk.git",
       "state" : {
-        "revision" : "f748e1d9c254959b010b9eb28956987b40d09580",
-        "version" : "2.1.0"
+        "revision" : "29c3e03a2db51a00b49175a7b8e56d8e445ccad3",
+        "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "authentication-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TransmitSecurity/authentication-ios-sdk.git",
+      "state" : {
+        "revision" : "ce3e9a8ed22361c5a2794456e77f89506ab796ba",
+        "version" : "1.1.1"
       }
     },
     {

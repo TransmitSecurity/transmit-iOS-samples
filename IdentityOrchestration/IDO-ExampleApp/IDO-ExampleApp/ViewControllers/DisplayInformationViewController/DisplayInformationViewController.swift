@@ -12,8 +12,8 @@ class DisplayInformationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = data?["title"] as? String
-        textLabel.text = data?["text"] as? String
+        titleLabel.text = viewTitle
+        textLabel.text = viewDescription
         
         submitButton.setTitle(submitButtonTitle, for: .normal)
     }

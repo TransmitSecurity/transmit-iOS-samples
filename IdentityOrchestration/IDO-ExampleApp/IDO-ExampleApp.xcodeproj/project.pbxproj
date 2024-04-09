@@ -26,6 +26,10 @@
 		155110E32BB03DDE00D2E1A2 /* AccountProtection in Frameworks */ = {isa = PBXBuildFile; productRef = 155110E22BB03DDE00D2E1A2 /* AccountProtection */; };
 		155110EE2BB2F7CE00D2E1A2 /* DRSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */; };
 		155110EF2BB2F7FD00D2E1A2 /* TransmitSecurity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1507D4CF2BAC348A0085F9A5 /* TransmitSecurity.plist */; };
+		15885D5F2BC553980029E06F /* NativeBiometricsRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15885D5D2BC553920029E06F /* NativeBiometricsRegistrationViewController.swift */; };
+		15885D602BC553A20029E06F /* NativeBiometricsRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15885D5E2BC553920029E06F /* NativeBiometricsRegistrationViewController.xib */; };
+		15885D632BC559390029E06F /* TSAuthenticationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 15885D622BC559390029E06F /* TSAuthenticationSDK */; };
+		15885D652BC55D360029E06F /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15885D642BC55D360029E06F /* DictionaryExtension.swift */; };
 		15FB974A2B95E2EA00872BE3 /* ActionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB97492B95E2EA00872BE3 /* ActionHandlerProtocol.swift */; };
 		1882684748ED416FA4290DA6 /* RejectAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9B553FBB74C47A5B855A9 /* RejectAccessViewController.xib */; };
 		23606309EF4744A3A5AF5D65 /* DisplayInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07653C395D1640F2AF37ACC8 /* DisplayInformationViewController.xib */; };
@@ -62,6 +66,10 @@
 		153135FF2B83489D00427759 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DRSViewController.xib; sourceTree = "<group>"; };
 		155110DF2BB02BB200D2E1A2 /* DRSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRSViewController.swift; sourceTree = "<group>"; };
+		15885D5D2BC553920029E06F /* NativeBiometricsRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBiometricsRegistrationViewController.swift; sourceTree = "<group>"; };
+		15885D5E2BC553920029E06F /* NativeBiometricsRegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeBiometricsRegistrationViewController.xib; sourceTree = "<group>"; };
+		15885D642BC55D360029E06F /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		15885D662BC579870029E06F /* IDO-ExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "IDO-ExampleApp.entitlements"; sourceTree = "<group>"; };
 		15FB97492B95E2EA00872BE3 /* ActionHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHandlerProtocol.swift; sourceTree = "<group>"; };
 		18078585B7A24104B64EE6BF /* FormPhoneViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = FormPhoneViewController.swift; sourceTree = "<group>"; };
 		58DAC92FF86F4FC6A87B20DA /* FormEmailViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = FormEmailViewController.xib; sourceTree = "<group>"; };
@@ -80,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				153135D72B7E213600427759 /* IdentityOrchestration in Frameworks */,
+				15885D632BC559390029E06F /* TSAuthenticationSDK in Frameworks */,
 				155110E32BB03DDE00D2E1A2 /* AccountProtection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +115,7 @@
 		153135B82B7E17B700427759 /* IDO-ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				15885D662BC579870029E06F /* IDO-ExampleApp.entitlements */,
 				1507D4CF2BAC348A0085F9A5 /* TransmitSecurity.plist */,
 				153135DC2B7E46AF00427759 /* Settings.swift */,
 				153135E02B8219D000427759 /* Utils */,
@@ -124,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				153135F02B82279500427759 /* Main */,
+				15885D5C2BC553650029E06F /* RegisterNativeBiometricsViewController */,
 				7F592C19ABB042009F334D47 /* ErrorViewController */,
 				A1740AFD6ED84AD59392F6B9 /* RejectAccessViewController */,
 				3BC52B3ECA084B8B9FA000A9 /* FormEmailViewController */,
@@ -138,6 +149,7 @@
 		153135E02B8219D000427759 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				15885D642BC55D360029E06F /* DictionaryExtension.swift */,
 				153135DE2B8219CD00427759 /* TSLoadingIndicator.swift */,
 				153135FF2B83489D00427759 /* NibLoadable.swift */,
 				153135F52B822C9700427759 /* Storyboardable.swift */,
@@ -172,6 +184,15 @@
 				155110DE2BB02BB200D2E1A2 /* DRSViewController.xib */,
 			);
 			path = DRSViewController;
+			sourceTree = "<group>";
+		};
+		15885D5C2BC553650029E06F /* RegisterNativeBiometricsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15885D5D2BC553920029E06F /* NativeBiometricsRegistrationViewController.swift */,
+				15885D5E2BC553920029E06F /* NativeBiometricsRegistrationViewController.xib */,
+			);
+			path = RegisterNativeBiometricsViewController;
 			sourceTree = "<group>";
 		};
 		34DAD9D8D72A47ACA4FE83E7 /* CompleteJourneyViewController */ = {
@@ -247,6 +268,7 @@
 			packageProductDependencies = (
 				153135D62B7E213600427759 /* IdentityOrchestration */,
 				155110E22BB03DDE00D2E1A2 /* AccountProtection */,
+				15885D622BC559390029E06F /* TSAuthenticationSDK */,
 			);
 			productName = "IDO-ExampleApp";
 			productReference = 153135B62B7E17B700427759 /* IDO-ExampleApp.app */;
@@ -279,6 +301,7 @@
 			packageReferences = (
 				153135D52B7E213600427759 /* XCRemoteSwiftPackageReference "identityOrchestration-ios-sdk" */,
 				155110E12BB03DDE00D2E1A2 /* XCRemoteSwiftPackageReference "accountprotection-ios-sdk" */,
+				15885D612BC559390029E06F /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */,
 			);
 			productRefGroup = 153135B72B7E17B700427759 /* Products */;
 			projectDirPath = "";
@@ -300,6 +323,7 @@
 				155110EE2BB2F7CE00D2E1A2 /* DRSViewController.xib in Resources */,
 				153135C12B7E17B700427759 /* Main.storyboard in Resources */,
 				13F6958033334F5A8C8F67CA /* ErrorViewController.xib in Resources */,
+				15885D602BC553A20029E06F /* NativeBiometricsRegistrationViewController.xib in Resources */,
 				1882684748ED416FA4290DA6 /* RejectAccessViewController.xib in Resources */,
 				F0A73498B5544379B83C9825 /* FormEmailViewController.xib in Resources */,
 				793DF1E4E0824EB6B0AFCC46 /* FormPhoneViewController.xib in Resources */,
@@ -319,8 +343,10 @@
 				BBF66AD12BA1A59F00596AC1 /* IdoJourneyActionTypeExtension.swift in Sources */,
 				153135DF2B8219CD00427759 /* TSLoadingIndicator.swift in Sources */,
 				153135E22B821A6C00427759 /* BaseViewController.swift in Sources */,
+				15885D5F2BC553980029E06F /* NativeBiometricsRegistrationViewController.swift in Sources */,
 				153136002B83489D00427759 /* NibLoadable.swift in Sources */,
 				153135F62B822C9700427759 /* Storyboardable.swift in Sources */,
+				15885D652BC55D360029E06F /* DictionaryExtension.swift in Sources */,
 				153135E72B82206100427759 /* IdoJourneyErrorExtension.swift in Sources */,
 				153135BA2B7E17B700427759 /* AppDelegate.swift in Sources */,
 				155110E02BB02BEE00D2E1A2 /* DRSViewController.swift in Sources */,
@@ -482,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "IDO-ExampleApp/IDO-ExampleApp.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M3RV2Q6B99;
@@ -512,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "IDO-ExampleApp/IDO-ExampleApp.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M3RV2Q6B99;
@@ -577,6 +605,14 @@
 				minimumVersion = 2.0.8;
 			};
 		};
+		15885D612BC559390029E06F /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TransmitSecurity/authentication-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -589,6 +625,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 155110E12BB03DDE00D2E1A2 /* XCRemoteSwiftPackageReference "accountprotection-ios-sdk" */;
 			productName = AccountProtection;
+		};
+		15885D622BC559390029E06F /* TSAuthenticationSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15885D612BC559390029E06F /* XCRemoteSwiftPackageReference "authentication-ios-sdk" */;
+			productName = TSAuthenticationSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

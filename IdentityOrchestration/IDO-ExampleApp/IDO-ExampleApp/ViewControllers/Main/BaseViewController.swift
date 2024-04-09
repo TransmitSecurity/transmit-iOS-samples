@@ -3,7 +3,7 @@ import IdentityOrchestration
 
 class BaseViewController: UIViewController, NibLoadable, ActionHandlerProtocol {
     
-    var data: [String: Any]?
+    private var data: [String: Any]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,6 +11,22 @@ class BaseViewController: UIViewController, NibLoadable, ActionHandlerProtocol {
     
     var submitButtonTitle: String? {
         data?["button_text"] as? String ?? "OK"
+    }
+    
+    var viewTitle: String? {
+        data?["title"] as? String
+    }
+    
+    var viewDescription: String? {
+        data?["text"] as? String
+    }
+    
+    var actionType: String? {
+        data?["action_type"] as? String
+    }
+    
+    func dataValue(forKey key: String) -> String? {
+        data?[key] as? String
     }
     
     func reloadData() {

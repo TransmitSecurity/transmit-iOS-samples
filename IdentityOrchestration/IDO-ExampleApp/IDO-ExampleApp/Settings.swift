@@ -8,5 +8,5 @@
 import Foundation
 
 struct Settings {
-    static let journeyId = "ido-sample-journey"
+    static let journeyId = "igor_native_biometrics"
 }

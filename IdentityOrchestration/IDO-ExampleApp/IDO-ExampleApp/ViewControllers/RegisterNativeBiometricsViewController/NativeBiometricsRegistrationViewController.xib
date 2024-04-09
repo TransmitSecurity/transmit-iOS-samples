@@ -9,11 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisplayInformationViewController" customModule="IDO_ExampleApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NativeBiometricsRegistrationViewController" customModule="IDO_ExampleApp" customModuleProvider="target">
             <connections>
                 <outlet property="submitButton" destination="j20-2A-x5X" id="hxc-DK-CUI"/>
                 <outlet property="textLabel" destination="OGT-O5-rjT" id="wWF-HE-u71"/>
                 <outlet property="titleLabel" destination="eJn-Mc-dlz" id="EdW-TG-qfY"/>
+                <outlet property="userIdLabel" destination="dlq-dD-e9r" id="lWU-I5-Psi"/>
                 <outlet property="view" destination="DkG-Nm-0Uq" id="UGA-RP-4iJ"/>
             </connections>
         </placeholder>
@@ -22,27 +23,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IwH-Bb-uWO">
-                    <rect key="frame" x="20" y="79" width="353" height="70.333333333333314"/>
+                    <rect key="frame" x="20" y="89" width="353" height="110.66666666666669"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJn-Mc-dlz">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJn-Mc-dlz">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-O5-rjT">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-O5-rjT">
                             <rect key="frame" x="0.0" y="50" width="353" height="20.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="User identifier" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-dD-e9r">
+                            <rect key="frame" x="0.0" y="90.333333333333343" width="353" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="OGT-O5-rjT" secondAttribute="bottom" id="GSe-ma-E1M"/>
-                        <constraint firstItem="OGT-O5-rjT" firstAttribute="leading" secondItem="IwH-Bb-uWO" secondAttribute="leading" id="l7z-3f-kYw"/>
-                        <constraint firstAttribute="trailing" secondItem="OGT-O5-rjT" secondAttribute="trailing" id="qEM-2L-7uk"/>
-                        <constraint firstItem="OGT-O5-rjT" firstAttribute="top" secondItem="IwH-Bb-uWO" secondAttribute="top" constant="50" id="tM0-gr-auk"/>
-                    </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j20-2A-x5X">
                     <rect key="frame" x="71.666666666666686" y="763" width="250" height="35"/>
@@ -55,7 +56,7 @@
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="OK"/>
+                    <state key="normal" title="Authenticate"/>
                     <connections>
                         <action selector="onSubmitButton:" destination="-1" eventType="touchUpInside" id="ey8-K3-fRW"/>
                     </connections>
@@ -64,13 +65,12 @@
             <viewLayoutGuide key="safeArea" id="uzE-Ia-uQg"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="j20-2A-x5X" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IwH-Bb-uWO" secondAttribute="bottom" constant="8" id="2Gz-U9-1rA"/>
                 <constraint firstItem="IwH-Bb-uWO" firstAttribute="centerX" secondItem="DkG-Nm-0Uq" secondAttribute="centerX" id="4zU-ra-wQo"/>
                 <constraint firstItem="j20-2A-x5X" firstAttribute="centerX" secondItem="DkG-Nm-0Uq" secondAttribute="centerX" id="5gk-HX-bc6"/>
-                <constraint firstItem="IwH-Bb-uWO" firstAttribute="leading" secondItem="uzE-Ia-uQg" secondAttribute="leading" constant="20" id="Ow9-Y7-Nmq"/>
+                <constraint firstItem="uzE-Ia-uQg" firstAttribute="trailing" secondItem="IwH-Bb-uWO" secondAttribute="trailing" constant="20" id="NYf-w5-iuh"/>
+                <constraint firstItem="IwH-Bb-uWO" firstAttribute="leading" secondItem="uzE-Ia-uQg" secondAttribute="leading" constant="20" id="OIS-qb-Lcf"/>
                 <constraint firstItem="uzE-Ia-uQg" firstAttribute="bottom" secondItem="j20-2A-x5X" secondAttribute="bottom" constant="20" id="g6o-5X-0io"/>
-                <constraint firstItem="IwH-Bb-uWO" firstAttribute="top" secondItem="uzE-Ia-uQg" secondAttribute="top" constant="20" id="jVM-kZ-4Ye"/>
-                <constraint firstItem="uzE-Ia-uQg" firstAttribute="trailing" secondItem="IwH-Bb-uWO" secondAttribute="trailing" constant="20" id="sya-gg-xdc"/>
+                <constraint firstItem="IwH-Bb-uWO" firstAttribute="top" secondItem="uzE-Ia-uQg" secondAttribute="top" constant="30" id="jVM-kZ-4Ye"/>
             </constraints>
             <point key="canvasLocation" x="1308" y="-654"/>
         </view>

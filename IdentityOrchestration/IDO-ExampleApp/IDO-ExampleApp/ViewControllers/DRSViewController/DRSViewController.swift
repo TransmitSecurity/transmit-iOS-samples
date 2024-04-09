@@ -28,7 +28,7 @@ class DRSViewController: BaseViewController {
         initializeDRS() { [weak self] success in
             guard success else { return }
             
-            let actionType = self?.data?["action_type"] as? String ?? ""
+            let actionType = self?.actionType ?? ""
             
             TSAccountProtection.triggerAction(actionType) { [weak self] result in
                 switch result {
