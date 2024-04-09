@@ -33,6 +33,7 @@ class DRSViewController: BaseViewController {
             TSAccountProtection.triggerAction(actionType) { [weak self] result in
                 switch result {
                 case .success(let response):
+                    debugPrint("[DEBUG] DRS access token: \(response.actionToken)")
                     self?.submitClientResponse(data: ["action_token": response.actionToken], optionId: .clientInput)
                 case .failure(let error):
                     debugPrint("[DEBUG] No data found in response object \(error)")
