@@ -12,7 +12,8 @@ class ViewController: BaseViewController {
         "Information": DisplayInformationViewController.self,
         "Success": CompleteJourneyViewController.self,
         "DrsTriggerAction": DRSViewController.self,
-        "NativeBiometricsRegistration": NativeBiometricsRegistrationViewController.self
+        "NativeBiometricsRegistration": NativeBiometricsRegistrationViewController.self,
+        "NativeBiometricsAuthentication": NativeBiometricsAuthenticationViewController.self
     ]
 
     override func viewDidLoad() {
