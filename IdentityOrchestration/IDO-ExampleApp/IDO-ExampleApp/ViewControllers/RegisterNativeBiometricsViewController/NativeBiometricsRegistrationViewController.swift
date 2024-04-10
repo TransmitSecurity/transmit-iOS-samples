@@ -55,7 +55,10 @@ class NativeBiometricsRegistrationViewController: BaseViewController {
                 self?.submitClientResponse(data: data, optionId: .clientInput)
             case .failure(let error):
                 debugPrint("[DEBUG] Error: \(error)")
-                self?.showAlert(title: "Authentication Error", message: "\(error)")
+                self?.showAlert(title: "Authentication Error", message: "\(error)", style: .alert, completion: { UIAlertAction in
+                    self?.stopLoadingIndicator()
+                    self?.submitClientResponse(data: [:], optionId: .fail)
+                })
             }
         }
     }
