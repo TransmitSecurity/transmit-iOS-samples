@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DRSViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RiskRecommendationsViewController">
             <connections>
                 <outlet property="submitButton" destination="j20-2A-x5X" id="hxc-DK-CUI"/>
                 <outlet property="textLabel" destination="OGT-O5-rjT" id="wWF-HE-u71"/>

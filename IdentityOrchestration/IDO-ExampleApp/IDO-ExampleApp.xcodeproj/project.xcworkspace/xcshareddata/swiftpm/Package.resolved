@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TransmitSecurity/identityOrchestration-ios-sdk.git",
       "state" : {
-        "revision" : "055f21b84e0a3bca5e97073a44ecf67f35e9d8b8",
-        "version" : "1.1.1"
+        "revision" : "ab15c1a32c82b9750b33f6fdf36a2b22bcfa7112",
+        "version" : "1.1.3"
       }
     }
   ],

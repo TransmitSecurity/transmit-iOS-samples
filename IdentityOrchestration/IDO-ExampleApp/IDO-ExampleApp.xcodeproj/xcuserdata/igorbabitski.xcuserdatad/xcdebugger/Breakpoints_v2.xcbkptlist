@@ -3,4 +3,70 @@
    uuid = "EDDEC12B-93FF-4213-B164-D6FDBE02267E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F49BD04-84EC-40B0-978C-6D201DFBF4FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IDO-ExampleApp/ViewControllers/Main/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "handle(_:navigationController:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDEC2CB8-4254-4B68-A420-EBCC2164D2CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IDO-ExampleApp/ViewControllers/EmailOTPAuthenticationViewController/EmailOTPAuthenticationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "submitButtonTapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BDEC2CB8-4254-4B68-A420-EBCC2164D2CE - 2e4eb80efce319c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IDO_ExampleApp.EmailOTPAuthenticationViewController.initializeIdoSDK() -&gt; ()"
+                  moduleName = "IDO-ExampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorbabitski/Documents/Projects/transmit-iOS-samples/IdentityOrchestration/IDO-ExampleApp/IDO-ExampleApp/ViewControllers/EmailOTPAuthenticationViewController/EmailOTPAuthenticationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "BDEC2CB8-4254-4B68-A420-EBCC2164D2CE - f79b6a0233c93f85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IDO_ExampleApp.EmailOTPAuthenticationViewController.submitButtonTapped() -&gt; ()"
+                  moduleName = "IDO-ExampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorbabitski/Documents/Projects/transmit-iOS-samples/IdentityOrchestration/IDO-ExampleApp/IDO-ExampleApp/ViewControllers/EmailOTPAuthenticationViewController/EmailOTPAuthenticationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "568">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

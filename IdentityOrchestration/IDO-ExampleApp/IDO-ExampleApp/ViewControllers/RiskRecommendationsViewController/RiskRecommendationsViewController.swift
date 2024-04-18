@@ -3,7 +3,7 @@ import UIKit
 import IdentityOrchestration
 import AccountProtection
 
-class DRSViewController: BaseViewController {
+class RiskRecommendationsViewController: BaseViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -21,6 +21,7 @@ class DRSViewController: BaseViewController {
     }
         
     override var submitButtonTitle: String? { "Run DRS" }
+    
     
     override func submitButtonTapped() {
         super.submitButtonTapped()

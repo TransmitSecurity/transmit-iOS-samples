@@ -11,9 +11,11 @@ class ViewController: BaseViewController {
         "phone": FormPhoneViewController.self,
         "Information": DisplayInformationViewController.self,
         "Success": CompleteJourneyViewController.self,
-        "DrsTriggerAction": DRSViewController.self,
+        "DrsTriggerAction": RiskRecommendationsViewController.self,
         "NativeBiometricsRegistration": NativeBiometricsRegistrationViewController.self,
-        "NativeBiometricsAuthentication": NativeBiometricsAuthenticationViewController.self
+        "NativeBiometricsAuthentication": NativeBiometricsAuthenticationViewController.self,
+        "EmailOTPAuthentication": EmailOTPAuthenticationViewController.self,
+        "SMSOTPAuthentication": SMSOTPAuthenticationViewController.self
     ]
 
     override func viewDidLoad() {

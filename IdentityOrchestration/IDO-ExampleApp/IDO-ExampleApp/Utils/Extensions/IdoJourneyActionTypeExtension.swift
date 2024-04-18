@@ -30,6 +30,10 @@ extension TSIdoJourneyActionType {
             return "NativeBiometricsRegistration"
         case .nativeBiometricsAuthenticaton:
             return "NativeBiometricsAuthentication"
+        case .emailOTPAuthentication:
+            return "EmailOTPAuthentication"
+        case .smsOTPAuthentication:
+            return "SMSOTPAuthentication"
         @unknown default:
             return "Unknown"
         }
