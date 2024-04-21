@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		11BE616EFAA64771A9B04240 /* FormEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50A2A077164444BEFF9A17 /* FormEmailViewController.swift */; };
 		13F6958033334F5A8C8F67CA /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6DDBF20A824FB5B74C205E /* ErrorViewController.xib */; };
+		1501B70C2BD538600019D78F /* SMSOTPAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15885DDA2BC7FF2F0029E06F /* SMSOTPAuthenticationViewController.xib */; };
 		153135BA2B7E17B700427759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135B92B7E17B700427759 /* AppDelegate.swift */; };
 		153135BC2B7E17B700427759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135BB2B7E17B700427759 /* SceneDelegate.swift */; };
 		153135BE2B7E17B700427759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153135BD2B7E17B700427759 /* ViewController.swift */; };
@@ -367,6 +368,7 @@
 				15885D602BC553A20029E06F /* NativeBiometricsRegistrationViewController.xib in Resources */,
 				1882684748ED416FA4290DA6 /* RejectAccessViewController.xib in Resources */,
 				F0A73498B5544379B83C9825 /* FormEmailViewController.xib in Resources */,
+				1501B70C2BD538600019D78F /* SMSOTPAuthenticationViewController.xib in Resources */,
 				15885DD52BC7F9270029E06F /* EmailOTPAuthenticationViewController.xib in Resources */,
 				793DF1E4E0824EB6B0AFCC46 /* FormPhoneViewController.xib in Resources */,
 				23606309EF4744A3A5AF5D65 /* DisplayInformationViewController.xib in Resources */,

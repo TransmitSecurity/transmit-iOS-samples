@@ -14,7 +14,7 @@ struct Constants {
     
     struct App {
         static let clientId = "ENTER_YOUR_CLIENT_ID"
-        static let clientSecret =
+        static let clientSecret = "ENTER_YOUR_CLIENT_SECRET"
     }
     
     struct GrantType {
@@ -23,7 +23,7 @@ struct Constants {
     
     struct ParamsKeys {
         static let clientId = "client_id"
-        static let clientSecret =
+        static let clientSecret = "client_secret"
         static let grantType = "grant_type"
     }
     

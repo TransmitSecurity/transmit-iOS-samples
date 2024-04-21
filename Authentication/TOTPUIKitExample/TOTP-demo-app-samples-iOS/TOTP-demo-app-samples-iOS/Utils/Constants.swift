@@ -11,7 +11,7 @@ struct Constants {
 
     struct App {
         static let clientId = "< Your Client ID >"
-        static let clientSecret =
+        static let clientSecret = "< Your Client Secret >"
     }
 }
 
@@ -25,7 +25,7 @@ extension Constants.Network {
 
     struct ParamsKeys {
         static let clientId = "client_id"
-        static let clientSecret =
+        static let clientSecret = "client_secret"
         static let grantType = "grant_type"
         static let username = "username"
         static let password = "password"
